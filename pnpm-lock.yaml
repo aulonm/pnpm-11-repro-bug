@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      '@code-obos/azure-env':
+        specifier: 1.0.3
+        version: 1.0.3
 
   apps/web:
     dependencies:
@@ -17,9 +21,6 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@code-obos/azure-env':
-        specifier: 1.0.3
-        version: 1.0.3
       '@vitejs/plugin-react':
         specifier: 4.3.1
         version: 4.3.1(vite@5.4.8(@types/node@24.12.2))
@@ -177,7 +178,7 @@ packages:
     engines: {node: '>=6.9.0'}
 
   '@code-obos/azure-env@1.0.3':
-    resolution: {integrity: sha512-OfCUo5R+c6ek3aYRazhq68y3MFXeONXYF1CEOpnV0uGFVt2suZ6AM2Ri75ZfnmJ/NHvOwuz99HjNira1t5jhRQ==}
+    resolution: {integrity: sha512-OfCUo5R+c6ek3aYRazhq68y3MFXeONXYF1CEOpnV0uGFVt2suZ6AM2Ri75ZfnmJ/NHvOwuz99HjNira1t5jhRQ==, tarball: https://npm.pkg.github.com/download/@code-obos/azure-env/1.0.3/c281b2be4b1723da1132c988daaccf5aac5235c9}
     hasBin: true
 
   '@esbuild/aix-ppc64@0.21.5':
